@@ -20,6 +20,11 @@ public class Employee {
 
 
 
+	public Employee() {
+	}
+
+
+
 	public static void main(String[] args) 
 	{
 		Employee emp1 = new Employee(1,"Aasim","Cyber Security Practice",382000,"Bulandshahr");
@@ -66,5 +71,15 @@ public class Employee {
 		System.out.println();
 
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Employee [EmpId=" + EmpId + ", name=" + name + ", dept=" + dept + ", salary=" + salary + ", address="
+				+ address + "]";
+	}
+
+
 
 }
